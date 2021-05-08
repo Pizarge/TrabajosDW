@@ -16,11 +16,21 @@
                 <label for="nombre">Nombre</label><br>
                 <input type="text" name="nombre" id="nombre"><br>
 
+                <label for="apellidos">Apellidos</label><br>
+                <input type="text" name="apellidos" id="apellidos"><br>
+
                 <label for="dni">DNI</label><br>
                 <input type="text" name="dni" id="dni" maxlength="9"><br>
 
                 <label for="edad">Edad</label><br>
                 <input type="text" name="edad" id="edad" size="2" maxlength="2"><br>
+
+                <label for="Sexo">Sexo</label><br>
+                <select name="Sexo">
+                    <option value="value1" selected>...</option>
+                    <option value="value2">Masculino</option>
+                    <option value="value3">Femenino</option>
+                </select>
                
             </fieldset>
 
@@ -31,9 +41,19 @@
                 <input type="radio" name="pelicula" value="33"> Déjame salir<br>
             </fieldset>
 
+            <fieldset id="películas_seleccionadas">
+                <legend>Selecciona las películas que no hayas visto</legend>
+                <input type="checkbox" name="pelicula" value="11"> Call me by your name<br>
+                <input type="checkbox" name="pelicula" value="22"> Dunkerque<br>
+                <input type="checkbox" name="pelicula" value="33"> Déjame salir<br>
+                <input type="checkbox" name="pelicula" value="44"> Pelicula 04<br>
+                <input type="checkbox" name="pelicula" value="55"> Pelicula 05<br>
+                
+            </fieldset>
+
             <fieldset id="grupo_argumento">
                 <legend>Argumento de tu película preferida</legend>
-                <textarea name="argumento" id="argumento" cols="14" rows="50"></textarea>
+                <textarea name="argumento" id="argumento" cols="100" rows="10"></textarea>
             </fieldset>
             <br>
             <input type="reset" value="Borrar formulario"> <input type="submit" value="Enviar">
