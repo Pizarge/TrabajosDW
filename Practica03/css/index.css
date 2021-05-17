@@ -1,0 +1,57 @@
+#cajabotones{
+    background-color: black;
+    float: left;
+}
+
+div.reset {
+    clear: both;
+  }
+
+#cajanombres{
+    background-color: cyan;
+    width: 50%;
+    margin: 20px auto;
+}
+#cajaimagennoticia1{
+    width: 500px;
+    height: 200px;
+    float: left;
+}
+#cajaimagennoticia2{
+    width: 500px;
+    height: 200px;
+    float: left;
+}
+
+#caja03{
+    background-color: cyan;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-template-rows: 200px;
+    grid-template-areas: "my-IMAGEN my-informacion my-siguenos my-infocont my-sigueen";
+}
+
+img.foto {
+    grid-area: my-IMAGEN;
+}
+
+h3.infocont {
+    grid-area: my-informacion;
+}
+h3.sigueen {
+    grid-area: my-siguenos;
+}
+h3.enlaces {
+    grid-area: my-infocont;
+}
+h3.menu {
+    grid-area: my-sigueen;
+}
+
+#cajaWebmaster{
+    width: 100%;
+    height: 200px;
+}
