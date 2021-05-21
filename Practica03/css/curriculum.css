@@ -10,17 +10,20 @@
 
 img.superior {
     margin-right: 150px;
+    border: black solid 1px;
 }
 
-#cajaimagennoticia1{
-    width: 500px;
-    height: 200px;
-    float: left;
+#datosCurri{
+    margin-left: 50px;
 }
-#cajaimagennoticia2{
-    width: 500px;
-    height: 200px;
-    float: left;
+
+#tablaExp, #tablaCur{
+    border: solid;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: solid;
 }
 
 #caja03{
@@ -64,7 +67,7 @@ h3.menu {
     background-color: black;
 } 
 
-#menuYenlaces{
+#menuYcurri{
     background-color: blue;
     float: right;
     width: 200px;
@@ -75,15 +78,13 @@ h3.menu {
 #menu{
     background-color: cyan;
     margin-top: 50px;
-    margin-bottom: 100px;
     margin-left: 20px;
     margin-right: 20px;
 }
 
-#enlaces{
+#enlacesCurri{
     background-color: cyan;
-    margin-top: 200px;
-    margin-bottom: 50px;
+    margin-top: 50px;
     margin-left: 20px;
     margin-right: 20px;
 }

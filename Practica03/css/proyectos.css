@@ -10,17 +10,11 @@
 
 img.superior {
     margin-right: 150px;
+    border: black solid 1px;
 }
 
-#cajaimagennoticia1{
-    width: 500px;
-    height: 200px;
-    float: left;
-}
-#cajaimagennoticia2{
-    width: 500px;
-    height: 200px;
-    float: left;
+#datosProy{
+    margin-left: 20px;
 }
 
 #caja03{
@@ -29,7 +23,7 @@ img.superior {
     height: 230px;
 }
 
-.grid {
+#caja03.grid {
     display: grid;
     grid-template-columns: 270px 350px 300px 300px 300px;
     grid-template-rows: 200px;
@@ -64,7 +58,7 @@ h3.menu {
     background-color: black;
 } 
 
-#menuYenlaces{
+#menuYproy{
     background-color: blue;
     float: right;
     width: 200px;
@@ -75,15 +69,13 @@ h3.menu {
 #menu{
     background-color: cyan;
     margin-top: 50px;
-    margin-bottom: 100px;
     margin-left: 20px;
     margin-right: 20px;
 }
 
-#enlaces{
+#enlacesProyecto{
     background-color: cyan;
-    margin-top: 200px;
-    margin-bottom: 50px;
+    margin-top: 50px;
     margin-left: 20px;
     margin-right: 20px;
 }
