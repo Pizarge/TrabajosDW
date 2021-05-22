@@ -13,15 +13,8 @@ img.superior {
     border: black solid 1px;
 }
 
-#cajaimagennoticia1{
-    width: 500px;
-    height: 200px;
-    float: left;
-}
-#cajaimagennoticia2{
-    width: 500px;
-    height: 200px;
-    float: left;
+#datosCon{
+    margin-left: 60px;
 }
 
 #caja03{
@@ -30,7 +23,7 @@ img.superior {
     height: 230px;
 }
 
-.grid {
+#caja03.grid {
     display: grid;
     grid-template-columns: 270px 350px 300px 300px 300px;
     grid-template-rows: 200px;
@@ -65,26 +58,24 @@ h3.menu {
     background-color: black;
 } 
 
-#menuYenlaces{
+#menuYproy{
     background-color: blue;
     float: right;
     width: 200px;
-    height: 660px;
+    height: 470px;
     margin-left: 10px;
 }
 
 #menu{
     background-color: cyan;
     margin-top: 50px;
-    margin-bottom: 100px;
     margin-left: 20px;
     margin-right: 20px;
 }
 
-#enlaces{
+#enlacesContactos{
     background-color: cyan;
-    margin-top: 200px;
-    margin-bottom: 50px;
+    margin-top: 50px;
     margin-left: 20px;
     margin-right: 20px;
 }

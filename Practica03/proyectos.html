@@ -9,19 +9,22 @@
 </head>
 <body>
     <div id="cajabotones">
-        <input type="submit" value="Inicio" style='width:150px; height:65px'><br>
-        <input type="submit" value="Curriculum" style='width:150px; height:65px'><br>
-        <input type="submit" value="Proyectos" style='width:150px; height:65px'><br>
-        <input type="submit" value="Contactos" style='width:150px; height:65px'>
+        <a href="index.html"><input type="button" value="Inicio" style='width:150px; height:65px'></a><br>
+        <a href="curriculum.html"><input type="button" value="Curriculum" style='width:150px; height:65px'></a><br>
+        <a href="proyectos.html"><input type="button" value="Proyectos" style='width:150px; height:65px'></a><br>
+        <a href="contactos.html"><input type="button" value="Contactos" style='width:150px; height:65px'></a>
     </div>
     <div id="cajanombres">
         <img id="foto1" class="superior" src="img/foto_rostro.jpg" alt="Foto de carnet" style="float: left" height="260px">
         <div style = "float: right">
-            <p>Iniciar Sesion</p>
+            <br>
+            <a href="sesion.html" style="text-decoration:none;color: black">
+                Iniciar sesión
+            </a>
         </div><br>
         <br>
-            <h1>JORGE ENRIQUE PIZARRO UCEDA</h1>
-            <p>Mi web personal</p>
+        <h1>JORGE ENRIQUE PIZARRO UCEDA</h1>
+        <p>Mi web personal</p>
     </div>
     <div id="caja02">
         <div id="cajanoticias" class="tamaño">
@@ -37,14 +40,14 @@
                     </ul>
                 </div>
 
-                <div id="enlacesProyecto">Curriculum
+                <div id="enlacesProyecto">Proyectos
                     <ul>
                         <li>
                             <style>
                                 a { color: black; }
                             </style>
                             <a href="#proyecto01" style="text-decoration:none">
-                                Proyecto 01
+                                Arte con LEDs
                             </a>
                         </li>
                         <li>
@@ -52,7 +55,7 @@
                                 a { color: black; }
                             </style>
                             <a href="#proyecto02" style="text-decoration:none">
-                                Proyecto 02
+                                Servidor online
                             </a>
                         </li>
                         <li>
@@ -60,7 +63,7 @@
                                 a { color: black; }
                             </style>
                             <a href="#proyecto03" style="text-decoration:none">
-                                Proyecto 03
+                                First Lego League
                             </a>
                         </li>
                         <li>
@@ -68,7 +71,7 @@
                                 a { color: black; }
                             </style>
                             <a href="#proyecto04" style="text-decoration:none">
-                                Proyecto 04
+                                Manual para Ensamblar robot
                             </a>
                         </li>
                         <br>
@@ -77,12 +80,52 @@
             </div>
 
             <div id="datosProy">
-
-                <h2 id="perfil"><font color="black" face="Arial" SIZE=5>Proyectos</font></h2> 
-
-
+                <br>
+                <table id="tablaProy">                        
+            
+                    <tbody>
+                    <tr>
+                        <th style="text-align:left" height="30" width="150">Proyectos</th>
+                        <th style="text-align:left" width="400" id="proyecto01">Arte con LEDs</th>
+                        <th style="text-align:left" width="400" id="proyecto02">Servidor online</th>
+                        <th style="text-align:left" width="400" id="proyecto03">First Lego League</th>
+                    </tr>
+                    <tr>
+                        <td height="30"></td>
+                        <td><img id="cajaimagennoticia2" src="img\proyecto01.png" alt="noticia2" width="300" height="170"></td>
+                        <td><img id="cajaimagennoticia2" src="img\proyecto02.jpg" alt="noticia2" width="300" height="170"></td>
+                        <td><img id="cajaimagennoticia2" src="img\proyecto03.jpg" alt="noticia2" width="300" height="170"></td>
+                    </tr>
+                    <tr>
+                        <td height="30"></td>
+                        <td><input type="submit" value="Ver" style='width:150px; height:30px; background-color: blue; color: white'></td>
+                        <td><input type="submit" value="Ver" style='width:150px; height:30px; background-color: blue; color: white'></td>
+                        <td><input type="submit" value="Ver" style='width:150px; height:30px; background-color: blue; color: white'></td>
+                    </tr>
+                    <tr>
+                        <th style="text-align:left" height="30" width="150"></th>
+                        <th style="text-align:left" width="400" id="proyecto04">Manual para Ensamblar robot</th>
+                        <th style="text-align:left" width="400">Crear pelicula stop-motion</th>
+                        <th style="text-align:left" width="400">Manual para drone</th>
+                    </tr>
+                    <tr>
+                        <td height="30"></td>
+                        <td><img id="cajaimagennoticia2" src="img\proyecto04.jpg" alt="noticia2" width="300" height="170"></td>
+                        <td><img id="cajaimagennoticia2" src="img\proyecto05.jpg" alt="noticia2" width="300" height="170"></td>
+                        <td><img id="cajaimagennoticia2" src="img\proyecto06.jpg" alt="noticia2" width="300" height="170"></td>
+                    </tr>
+                    <tr>
+                        <td height="30"></td>
+                        <td><input type="submit" value="Ver" style='width:150px; height:30px; background-color: blue; color: white;'></td>
+                        <td><input type="submit" value="Ver" style='width:150px; height:30px; background-color: blue; color: white'></td>
+                        <td><input type="submit" value="Ver" style='width:150px; height:30px; background-color: blue; color: white'></td>
+                    </tr>
+                    </tbody>
+        
+                </table>
 
             </div>
+            
         </div>
     </div>
 
