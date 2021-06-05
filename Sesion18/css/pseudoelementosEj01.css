@@ -3,3 +3,21 @@
 p::first-letter{
     font-size: 2rem;
 }
+
+div:hover{
+    background-color: yellow;
+}
+
+a:hover{
+    color: red;
+}
+
+a:focus{
+    /* Solo para los selectores <a> */
+    color: green;
+}
+
+a:active{
+    /* Solo para los selectores <a> */
+    color: hotpink;
+}
