@@ -33,7 +33,7 @@ function eliminarTodo(){
     actualizarDatos();
 }
 function actualizarDatos(){
-    var registro = "";
+    var registro = JSON.parse(localStorage.getItem("registro"));
     if (localStorage.length === 0){
         registro += '<li>Vacío</li>'
     }else{
