@@ -1,0 +1,41 @@
+body{
+    overflow: hidden;
+}
+
+p{
+    /* animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+    animation: 5s infinite alternate slidein;
+}
+
+@keyframes slidein{
+    /* from{
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to{
+        margin-left: 0%;
+        width: 100%;
+    } */
+
+    0% {
+        margin-left: 100%;
+        width: 300%;
+    }
+    30%{
+        background-color: gray;
+    }
+    60%{
+        background-color: cyan;
+    }
+    90%{
+        background-color: goldenrod;
+    }
+    100%{
+        margin-left: 0%;
+        width: 100%;
+    }
+}

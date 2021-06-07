@@ -1,0 +1,111 @@
+div{
+    background: #8e44ad;
+    color: white;
+    padding: .2rem .3rem 1rem .3rem;
+    position: absolute;
+    border-radius: 2rem 2rem 0 0;
+    animation-name: animar;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animar{
+    /* 0%{
+        left: 1rem;
+        top: 1rem;
+    }
+    10%{
+        left: 6rem;
+        top: 1rem;
+        color: #9b59b6;
+    }
+    30%{
+        top: 5rem;
+        left: 6rem;
+        color: white;
+    }
+    60%{
+        top: 5rem;
+        left: 1rem;
+        color: #9b59b6;
+    }
+    100%{
+        top: 1rem;
+        left: 1rem;
+    } */
+    0%{
+        left: 1rem;
+        top: 1rem;
+    }
+    5%{
+        left: 11rem;
+        top: 1rem;
+        color: #9b59b6;
+    }
+    10%{
+        top: 5rem;
+        left: 11rem;
+        color: white;
+    }
+    20%{
+        top: 5rem;
+        left: 18rem;
+        color: white;
+    }
+    30%{
+        top: 21rem;
+        left: 18rem;
+        color: white;
+    }
+    40%{
+        top: 21rem;
+        left: 13rem;
+        color: white;
+    }
+    41%{
+        top: 23rem;
+        left: 13rem;
+        color: white;
+    }
+    50%{
+        top: 23rem;
+        left: 16rem;
+        color: #9b59b6;
+    }
+    51%{
+        top: 27rem;
+        left: 16rem;
+        color: #9b59b6;
+    }
+    52%{
+        top: 27rem;
+        left: 13rem;
+        color: #9b59b6;
+    }
+    53%{
+        top: 30rem;
+        left: 13rem;
+        color: #9b59b6;
+    }
+    54%{
+        top: 30rem;
+        left: 11rem;
+        color: #9b59b6;
+    }
+    55%{
+        top: 27rem;
+        left: 11rem;
+        color: #9b59b6;
+    }
+    56%{
+        top: 27rem;
+        left: 8rem;
+        color: #9b59b6;
+    }
+    57%{
+        top: 24rem;
+        left: 8rem;
+        color: #9b59b6;
+    }
+    
+}
