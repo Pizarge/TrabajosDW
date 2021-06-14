@@ -1,3 +1,7 @@
 #contenedor{
-    background-color: cadetblue;
+    background-color: rgb(226,226,226);
+}
+
+div[class^=col]{
+    border: grey 1px solid;
 }
