@@ -42,7 +42,7 @@ div{
         top: 1rem;
         color: #9b59b6;
     }
-    10%{
+    15%{
         top: 5rem;
         left: 11rem;
         color: white;
@@ -52,60 +52,79 @@ div{
         left: 18rem;
         color: white;
     }
-    30%{
+    28%{
         top: 21rem;
         left: 18rem;
         color: white;
     }
-    40%{
+    30%{
         top: 21rem;
         left: 13rem;
         color: white;
     }
-    41%{
+    35%{
         top: 23rem;
         left: 13rem;
         color: white;
     }
-    50%{
+    40%{
         top: 23rem;
         left: 16rem;
         color: #9b59b6;
     }
-    51%{
+    45%{
         top: 27rem;
         left: 16rem;
         color: #9b59b6;
     }
-    52%{
+    50%{
         top: 27rem;
         left: 13rem;
-        color: #9b59b6;
-    }
-    53%{
-        top: 30rem;
-        left: 13rem;
-        color: #9b59b6;
-    }
-    54%{
-        top: 30rem;
-        left: 11rem;
         color: #9b59b6;
     }
     55%{
+        top: 30rem;
+        left: 13rem;
+        color: #9b59b6;
+    }
+    60%{
+        top: 30rem;
+        left: 11rem;
+        color: #9b59b6;
+    }
+    65%{
         top: 27rem;
         left: 11rem;
         color: #9b59b6;
     }
-    56%{
+    70%{
         top: 27rem;
         left: 8rem;
         color: #9b59b6;
     }
-    57%{
+    75%{
         top: 24rem;
         left: 8rem;
         color: #9b59b6;
     }
-    
+    80%{
+        top: 24rem;
+        left: 6rem;
+        color: #9b59b6;
+    }
+    85%{
+        top: 9rem;
+        left: 6rem;
+        color: #9b59b6;
+    }
+    90%{
+        top: 9rem;
+        left: 1rem;
+        color: #9b59b6;
+    }
+    100%{
+        top: 1rem;
+        left: 1rem;
+        color: #9b59b6;
+    }
 }
