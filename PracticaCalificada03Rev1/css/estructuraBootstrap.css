@@ -1,0 +1,43 @@
+#contenedor {
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+header {
+    background-color: greenyellow;
+}
+
+nav {
+    background-color: cornflowerblue;
+}
+
+aside {
+    background-color: darkmagenta;
+}
+
+section {
+    background-color: indigo;
+}
+
+footer{
+    background-color: greenyellow;
+}
+
+#cajanombres{
+    background-color: cyan;
+    height: 260px;
+}
+
+#cajabotones {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+}
+.encabezado{
+    background-color: greenyellow;
+}
+
+
+
+
+

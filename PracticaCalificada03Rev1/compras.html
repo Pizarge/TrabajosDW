@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Compras</title>
+</head>
+<body>
+    <main id="contenedor" class="container">
+        <div class="row">
+            <div id="cajabotones" style="text-align: right;">
+                <button type="button" class="btn btn-primary" onclick="location.href='inicio.html'" style="background-color: #2B6CA3;">
+                    Inicio
+                </button>
+
+                <button type="button" class="btn btn-primary" onclick="location.href='productos.html'" style="background-color: #2B6CA3;">
+                    Productos
+                </button>
+
+                <!-- boton modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="background-color: #2B6CA3;">
+                    Compras
+                </button>
+                
+                <!-- estr modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Dialog title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../PracticaCalificada03/img/modalimg.png" alt="" width="100px" height="100px">
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="location.href='compras.html'">Ir a tienda</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+
+                <button type="button" class="btn btn-primary" onclick="location.href='proyectos.html'" style="background-color: #2B6CA3;">
+                    Proyectos
+                </button>
+
+                <button type="button" class="btn btn-primary" onclick="location.href='nosotros.html'" style="background-color: #2B6CA3;">
+                    Nosotros
+                </button>
+                
+            </div>
+            <header style="background-color: #2B6CA3;">
+                
+                <div id="cajanombres">
+                    <img id="foto1" class="superior" src="img/logo.jpeg" alt="Foto logo" style="float: left" height="100px" width="150px">
+                    <div style = "float: right">
+                        <button class="fotocarrito" onclick="location.href='compras.html'" height="50px" width="50px"><img src="img/carritodecompras.png" /></button>
+                        <img class="usuarioimg" src="img/usuarioimg.jpeg" height="50px" width="50px">
+                    </div>
+                    <br>
+                    <h1>Ferreterias TODO</h1>
+                </div>
+            </header>
+        </div>
+        <br>
+        <div class="row">
+            
+        </div>
+        <br>
+        <div class="row">
+
+            <div class="row">
+                <div class="col">
+                  <div id="productos" class="card">
+                    <div class="card-header">
+                      <h4>Productos</h4>
+                    </div>
+                    <div class="container">
+                      <div class="row">
+                          <!-- Elementos generados a partir del JSON -->
+                          <main id="items" class="col-sm-8 row"></main>
+                          <!-- Carrito -->
+                          <aside class="col-sm-4">
+                              <h2>Carrito</h2>
+                              <!-- Elementos del carrito -->
+                              <ul id="carrito" class="list-group"></ul>
+                              <hr>
+                              <!-- Precio total -->
+                              <p class="text-right">Total: <span id="total"></span>&euro;</p>
+                              <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+                          </aside>
+                      </div>
+                  </div>
+                  </div>
+                </div>
+                      
+                  <div class="row">
+                    <div class="col">
+                  <div id="carrito" class="card">
+                    <div class="card-header">
+                      <h4>Carrito de compra</h4>
+                    </div>
+                    <div class="card-body">
+                      <table id="cart" class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Producto</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody id="cartBody">
+                          <td>No hay productos</td>
+                        </tbody>
+                      </table>
+                      <div id="total" class="card">
+                        <div class="card-header">
+                          <h4>Total: S/.<h4 id="amount">0.00</h4>
+                          </h4>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <form class="my-3 mx-3">
+                    <div class="d-flex flex-row align-items-center py-3">
+                      <h6>Nombres y Apellidos: </h6>
+                      <input type="text" id="cliente" placeholder="nombres y apellidos" class="mx-2 inp">
+                    </div>
+                    <div class="d-flex flex-row align-items-center">
+                      <h6>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;Email:</h6> &nbsp;&nbsp; 
+                      <input type="email" id="correo" placeholder="email" class="inp">
+                    </div>
+                            </form>
+                      <button type="button" class="btn btn-primary my-2" id="modal-new" data-bs-toggle="modal" data-bs-target="#exampleModal1" style="background-color: #2B6CA3;" onclick="ver()">Enviar Compra</button><br>
+                      <button type="button" class="btn btn-secondary my-2" style="background-color: #2B6CA3;" onclick="nueva()" >Nueva Compra</button>
+            
+                </div>
+          </div>
+                 
+                    <div class="card-body">
+                      <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title">Compra Registrada</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="d-flex flex-row">
+                              <h5>Nombres y Apellidos: </h5>
+                              <h5 id="info1"></h5>
+                            </div>
+                            <div class="d-flex flex-row">
+                            <h5 > Email: </h5>
+                            <h5 id="info2"></h5>
+                            </div>
+                            <h5 id="enviar"></h5>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="complete()">Aceptar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+          
+                    </div>
+                  </div>
+                
+                </div>
+
+            <footer class="text-center text-lg-start bg-light text-muted">
+
+                <section
+                class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+                >
+                           
+
+                <div>
+                    <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                    </a>
+                </div>
+
+                </section>
+
+                <section class="">
+                <div class="container text-center text-md-start mt-5">
+
+                    <div class="row mt-3">
+
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                        <i class="fas fa-gem me-3"></i>Contactanos
+                        </h6>
+                        <ul>
+                            <li>Line 1</li>
+                            <li>Line 2</li>
+                            <li>Line 3</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                        Redes Sociales
+                        </h6>
+                        <img src="img/redsocial1.jpeg" alt="" width="30px" height="30px">
+                        <img src="img/redsocial2.jpeg" alt="" width="30px" height="30px">
+                        <img src="img/redsocial3.jpeg" alt="" width="30px" height="30px"> <br>
+                        <img src="img/redsocial4.jpeg" alt="" width="30px" height="30px">
+                        <img src="img/redsocial5.jpeg" alt="" width="30px" height="30px">
+                        <img src="img/redsocial6.jpeg" alt="" width="30px" height="30px">
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15848.303415612354!2d-79.84087805!3d-6.7606052000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904cef282f7274e3%3A0x8598d629c055c906!2sParque%20Principal%20de%20Chiclayo!5e0!3m2!1ses-419!2spe!4v1624294845357!5m2!1ses-419!2spe" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+            </footer>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
