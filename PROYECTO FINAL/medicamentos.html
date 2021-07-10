@@ -6,14 +6,16 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/medicamentos.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-	<script src="js/jquery-3.2.1.js"></script>
-	<script src="js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/script.js"></script>
+    <script defer src="js/jquery-1.11.1.js"></script>
+    <script defer src="js/filtrarCheckbockMedicamentos.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/icono.ico">
     <title>MEDICAMENTOS | TODO HOGAR</title>
 </head>
-<body >
+<body>
     <section class="home" style="background-color: #D9F0FD">
       
         <!-- <div class="in-flex"></div>
@@ -43,35 +45,59 @@
             </div>
             </section>
 
-<section style="margin: 0px 200px 50px 100px;" >
+<section style="margin: 0px 0px 50px 100px;" >
     
-    <div style="margin: 0px 0px 20px 20px;"  >
-        <div style="margin: 0px 10px 0px 170px;" class="store-wrapper">
-            <div class="category_list">
-				<a href="#" class="category_item" category="all">Todo</a><hr>
-				<a href="#" class="category_item" category="Molestar general y fiebre">Molestar general y fiebre</a><hr>
-				<a href="#" class="category_item" category="Resfriado comun">Resfriado común</a><hr>
-				<a href="#" class="category_item" category="Problemas digestivos">Problemas digestivos</a>
-			</div>  
-          <div class="products-list">
+   <div style="margin: 0px 0px 20px 20px;"  >
+     <div style="margin: 0px 0px 0px 170px;" class="store-wrapper">
+      <div>
+        <h3>Filtros:</h3>
+        <div>
+          <button id="c1b" style="color: black; background-color: #D9F0FD; border: none; width: auto;">Se desea combatir:</button>
+        </div>
+        <div class="category_list">
+            <a href="#" class="category_item" category="all">Todo</a><hr>
+            <a href="#" class="category_item" category="Molestar general y fiebre">Molestar general y fiebre</a><hr>
+            <a href="#" class="category_item" category="Resfriado comun">Resfriado común</a><hr>
+            <a href="#" class="category_item" category="Problemas digestivos">Problemas digestivos</a>
+			  </div>
+        <br><br>
+        <div>
+          <button id="c2b" style="color: black; background-color: #D9F0FD; border: none;">Marca:</button>
+        </div>
+        <div class="checkbox_list">
+            <div id='filters'>
+              <div>
+                <input type='checkbox' name='mark' id='GENFAR' value='GENFAR'>GENFAR</input><hr>
+                <input type='checkbox' name='mark' id='DELFARMA' value='DELFARMA'>DELFARMA</input><hr>
+                <input type='checkbox' name='mark' id='CAFERMA' value='CAFERMA'>CAFERMA</input><hr>
+                <input type='checkbox' name='mark' id='ANSOLAT' value='ANSOLAT'>ANSOLAT</input>
+              </div>
+              <div>
+                <br>
+                <input type='button' id='none' value='Borrar filtros'></input>
+              </div>
+            </div>
+			  </div>
+      </div>
+          <div class="products-list" style="width: auto;">
             <p>Productos encontrados:</p>  
             <div class="row">
                 <div class="col-xs-5 col-sm-3 col-md-2 product">
-                    <div class="card" category="Molestar general y fiebre">
+                    <div class="card" category="Molestar general y fiebre" data-mark='GENFAR'>
                         <img src="img/medicamento1.jpg" alt="Imagen producto medicamento 1">
                         <h4>Panadol Antigripal NF Tableta</h4>
                         <p>S/.105.04</p>
                     </div>
                 </div>
-                <div class="col-xs-10 col-sm-5 col-md-2 product">
-                    <div class="card" category="Resfriado comun">
+                <div class="col-xs-5 col-sm-3 col-md-2 product">
+                    <div class="card" category="Resfriado comun" data-mark='GENFAR'>
                         <img src="img/medicamento2.jpg" alt="Imagen producto medicamento 2">
                         <h4>Abrilar Jarabe - Frasco 100 ML</h4>
                         <p>S/.15.90</p>
                     </div>
                 </div>
                 <div class="col-xs-5 col-sm-3 col-md-2 product">
-                    <div class="card" category="Problemas digestivos">
+                    <div class="card" category="Problemas digestivos" data-mark='ANSOLAT'>
                         <img src="img/medicamento3.jpg" alt="Imagen producto medicamento 3">
                         <h4>BioGaia Protectis 19mg/ml</h4>
                         <p>S/.49.40</p>
@@ -80,21 +106,21 @@
             </div>
             <div class="row">
                 <div class="col-xs-5 col-sm-3 col-md-2 product">
-                    <div class="card" category="Molestar general y fiebre">
+                    <div class="card" category="Molestar general y fiebre" data-mark='DELFARMA'>
                         <img src="img/medicamento4.jpg" alt="Imagen producto medicamento 4">
                         <h4>Panadol Forte Tableta</h4>
                         <p>S/.44.98</p>
                     </div>
                 </div>
-                <div class="col-xs-10 col-sm-5 col-md-2 product">
-                    <div class="card" category="Molestar general y fiebre">
+                <div class="col-xs-5 col-sm-3 col-md-2 product">
+                    <div class="card" category="Molestar general y fiebre" data-mark='CAFERMA'>
                         <img src="img/medicamento5.jpg" alt="Imagen producto medicamento 5">
                         <h4>Vick Vaporub Ungüento tópico</h4>
                         <p>S/.13.60</p>
                     </div>
                 </div>
                 <div class="col-xs-5 col-sm-3 col-md-2 product">
-                    <div class="card" category="Molestar general y fiebre">
+                    <div class="card" category="Molestar general y fiebre" data-mark='CAFERMA'>
                         <img src="img/medicamento6.jpg" alt="Imagen producto medicamento 6">
                         <h4>Aspirina 100mg Tableta</h4>
                         <p>S/.48.00</p>
@@ -102,9 +128,10 @@
                 </div>
             </div>
           </div>    
-        </div>
-    </div>
-    
+     </div>
+   </div>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/abrirfiltros.js"></script>
 </section>
 
 <section>
@@ -200,5 +227,6 @@
   </footer>
   <!-- Footer -->
 </section>
+
 </body>
 </html>

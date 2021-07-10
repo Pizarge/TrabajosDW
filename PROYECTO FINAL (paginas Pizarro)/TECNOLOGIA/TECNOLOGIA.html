@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/TECNOLOGIA.css">
+    <link rel="icon" href="img/icono.ico">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/script.js"></script>
+    <script defer src="js/jquery-1.11.1.js"></script>
+    <script defer src="js/filtrarCheckbockTecnologia.js"></script>
+    <title>TECNOLOGIA</title>
+</head>
+
+<body>
+    <header>
+        <div id="Logo" class="bg-image">
+            <a href="index.html"><img img src="img/logo.jpg" alt="Logo"></a>
+        </div>
+        <div id="Botones" class="navbar">
+            <form class="form">
+                <button type="button">INICIO</button>
+                <button type="button">CONTACTO</button>
+                <button type="button">MI CUENTA</button>
+                <button type="button">MI CARRITO</button>
+                <button type="button">INICIO SESION</button>
+                <button type="button">NOSOTROS</button>
+            </form>
+        </div>
+    </header>
+    <nav>
+        <br>
+        <div id="Contenedor" class="container-fluid">
+            <div class="input-group">
+                <input id="Buscador" class="form-control" type="search" placeholder="Escriba el producto a buscar" aria-label="Search">
+                <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+        <br>
+    </nav>
+        <section>
+            <div id="Contenidos">
+                <div id="Filtros" class="container-fluid">
+                    <h4>Filtros</h4>
+                    <hr>
+
+                    <div>
+                        <button id="c1b" style="color: black; background-color: #D9F0FD; border: none; width: auto;">Status:</button>
+                    </div>
+                    <div class="category_list">
+                        <a href="#" class="category_item" category="all">Todo</a><br>
+                        <a href="#" class="category_item" category="En stock">En stock</a>
+                    </div>
+
+                    <hr>
+                    <div>
+                        <button id="c2b" style="color: black; background-color: #D9F0FD; border: none;">Precio:</button>
+                    </div>
+                    <div class="Price_bar">
+                        
+                    </div>
+
+                    <hr>
+                    <div>
+                        <button id="c3b" style="color: black; background-color: #D9F0FD; border: none;">Tipo:</button>
+                    </div>
+                    <div class="checkbox_list_c3b">
+                        <div id='filters'>
+                            <div>
+                              <input type='checkbox' name='tipo' id='Monitores de computadora' value='Monitores de computadora'>Monitores de computadora</input><br>
+                              <input type='checkbox' name='tipo' id='Transmisores Bluetooth' value='Transmisores Bluetooth'>Transmisores Bluetooth</input><br>
+                              <input type='checkbox' name='tipo' id='Cables USB' value='Cables USB'>Cables USB</input>
+                            </div>
+                            <div>
+                              <br>
+                              <input type='button' id='none' value='Borrar filtros'></input>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <div>
+                        <button id="c4b" style="color: black; background-color: #D9F0FD; border: none;">Color:</button>
+                    </div>
+                    <div class="checkbox_list_c4b">
+                        <div id='filters'>
+                            <div>
+                              <input type='checkbox' name='color' id='Rojo' value='Rojo'>Rojo</input><br>
+                              <input type='checkbox' name='color' id='Verde' value='Verde'>Verde</input><br>
+                              <input type='checkbox' name='color' id='Negro' value='Negro'>Negro</input>
+                            </div>
+                            <div>
+                              <br>
+                              <input type='button' id='none' value='Borrar filtros'></input>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="Productos">
+                    <div id="Ordenar">
+                        <select class="form-select" style="border: 1px solid black;">
+                            <option>Ordenar</option>
+                            <option>Lo más nuevo</option>
+                            <option>Precio (de bajo a alto)</option>
+                            <option>Precio (de alto a bajo)</option>
+                            <option>Nombre de A-Z</option>
+                            <option>Nombre de Z-A</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div id="grid" class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card h-100" category="En stock" data-color='Negro'>
+                                <div class="card-body">
+                                    <img src="img/tecnologia01.jpg" class="card-img-top">
+                                    <h6 class="card-title">Mouse Teraware PJT-M218</h6>
+                                    <p class="card-text"><small class="text-muted">S/.9.90</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100" category="En stock" data-tipo='Cables USB' data-color='Verde'>
+                                <div class="card-body">
+                                    <img src="img/tecnologia02.jpg" class="card-img-top">
+                                    <h6 class="card-title">Cable Reversible Micro USB</h6>
+                                    <p class="card-text"><small class="text-muted">S/.19.90</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100" data-tipo='Cables USB'>
+                                <div class="card-body">
+                                    <img src="img/tecnologia03.jpg" class="card-img-top">
+                                    <h6 class="card-title">Cable lightning a USB Apple</h6>
+                                    <p class="card-text"><small class="text-muted">S/.79.90</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100" category="En stock" data-tipo='Transmisores Bluetooth' data-color='Rojo'>
+                                <div class="card-body">
+                                    <img src="img/tecnologia04.jpg" class="card-img-top">
+                                    <h6 class="card-title">Audífono Bluetooth On Ear BASS+</h6>
+                                    <p class="card-text"><small class="text-muted">S/.99.90</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100" category="En stock" data-tipo='Monitores de computadora' data-color='Negro'>
+                                <div class="card-body">
+                                    <img src="img/tecnologia05.jpg" class="card-img-top">
+                                    <h6 class="card-title">Monitor plano Xiaomi 23.8"</h6>
+                                    <p class="card-text"><small class="text-muted">S/.599.90</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100" data-color='Negro'>
+                                <div class="card-body">                            
+                                    <img src="img/tecnologia06.jpg" class="card-img-top">
+                                    <h6 class="card-title">Cable 4 en 1 Baseus 3.5A</h6>
+                                    <p class="card-text"><small class="text-muted">S/.59.90</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+                <script type="text/javascript" src="js/abrirfiltros.js"></script>
+            <br>
+        </section>
+        <footer>
+            <div class="d-flex justify-content-center justify-content-lg-between">
+                <div class="text-md-start mt-4" style="margin-left: 130px;">
+                    <div id="footer_columnas" class="row mt-3">
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class=" fw-bold mb-3">Comunícate con nosotros:</h6>
+                            <ul class="list-unstyled mb-0">
+                                <li>Tel: 123-456-789</li>
+                                <li><a href="mailto:monicausat@hotmail.com" data-autorecognition="true" class="text-reset">todohogar@gmail.com</a></li>
+                            </ul>
+                        </div>
+              
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4" style="text-align: justify;">
+                            <h6 class="fw-bold mb-3">¿Quienes somos?</h6>
+                            <p>Somos una tienda online que brinda una variedad de productos a todo el Perú. El objetivo 
+                                de nuestro negocio es ofrecer productos de primera necesidad para el hogar a precios accesibles.
+                            </p>
+                        </div>
+
+                        <div class="col-md-3 mx-auto mb-4">
+                            <h6 class=" fw-bold mb-3">Formas de pago:</h6>
+                            <p>
+                                <a href="#!" ><img src="img/maestro.png" alt=""></a>
+                                <a href="#!" ><img src="img/visa.png" alt=""></a>
+                                <a href="#!" ><img src="img/mastercard.png" alt=""></a>
+                                <a href="#!" ><img src="img/paypal.png" alt=""></a>
+                            </p>
+                        </div>
+
+                        <div class="col-md-4 col-lg-3 col-xl-2.5 mx-auto mb-md-0 mb-4">
+                            <h6 class=" fw-bold mb-3">Siguenos en:</h6>
+                            <p>
+                            <a href="#!" ><img src="img/facebook.png" alt=""></a>
+                            <a href="#!" ><img src="img/twitter.png" alt=""></a>
+                            <a href="#!" ><img src="img/yotube.png" alt=""></a>
+                            <a href="#!" ><img src="img/Instagram.png" alt=""></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05); color: black;">
+                © 2021 Copyright: <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Grupo 05</a>
+            </div>
+        </footer>
+    <script type="javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

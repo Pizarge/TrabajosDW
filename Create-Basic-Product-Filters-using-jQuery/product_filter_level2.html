@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>Product Filter Level 2</title>
+    <link rel="stylesheet" type="text/css" href="css/product_filter.css">
+    <script defer src="js/jquery-1.11.1.js"></script>
+    <script defer src="js/product_filter_level2.js"></script>
+  </head>
+  <body>
+    <div id='filters' class='sections'>
+      <div class='filter-attributes'>
+        <h4>Colour</h4>
+        <input type='checkbox' name='colour' id='red' value='red' >Red</input>
+        <input type='checkbox' name='colour' id='blue' value='blue' >Blue</input>
+        <input type='checkbox' name='colour' id='green' value='green' >Green</input>
+        <input type='checkbox' name='colour' id='yellow' value='yellow' >Yellow</input>
+      </div>
+      <div class='filter-attributes'>
+        <h4>Size</h4>
+        <input type='checkbox' name='size' id='large' value='large' >Large</input>
+        <input type='checkbox' name='size' id='small' value='small' >Small</input>
+        <input type='checkbox' name='size' id='medium' value='medium' >Medium</input>
+      </div>
+      <div class='filter-attributes'>
+        <h4>Shape</h4>
+        <input type='checkbox' name='shape' id='rectangle' value='rectangle' >Rectangle</input>
+        <input type='checkbox' name='shape' id='square' value='square' >Square</input>
+        <input type='checkbox' name='shape' id='circle' value='circle' >Circle</input>
+      </div>
+      <div>
+        <br>
+        <input type='button' id='none' value='Clear all'></input>
+      </div>
+    </div>
+    <div class='sections'>
+      <ul>
+        <li class='grid-products' data-colour='red' data-size='large' data-shape='circle'>
+          <span>Product 1, Size-L</span>
+        </li>
+        <li class='grid-products' data-colour='yellow' data-size='medium' data-shape='square' >
+          <span>Product 2, Size-M</span>
+        </li>
+        <li class='grid-products' data-colour='green' data-size='small' data-shape='rectangle'>
+          <span>Product 3, Size-S</span>
+        </li>
+        <li class='grid-products' data-colour='red' data-size='large' data-shape='rectangle'>
+          <span>Product 4, Size-L</span>
+        </li>
+        <li class='grid-products' data-colour='blue' data-size='small' data-shape='circle'>
+          <span>Product 5, Size-S</span>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
